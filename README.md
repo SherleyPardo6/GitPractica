@@ -22,14 +22,16 @@ Clona el repositorio en tu máquina local:
 
 ```sh
 git clone https://github.com/AlexandraZambrano/git_commit_branch.git
-cd pagina-web-ejemplo```
+cd pagina-web-ejemplo
+```
 
 ### 2. Crear una rama para la funcionalidad principal
 
 Clona el repositorio en tu máquina local:
 
 ```sh
-git checkout -b feature/pagina-principal```
+git checkout -b feature/pagina-principal
+```
 
 ### 3. Crear un archivo HTML y CSS
 
@@ -62,7 +64,8 @@ body {
 
 h1 {
     color: #007acc;
-}```
+}
+```
 
 ### Pasos para Crear y Modificar la Página Web
 
@@ -71,19 +74,22 @@ Realiza un commit usando el formato de Conventional Commits:
 
 ```sh
 git add index.html style.css
-git commit -m "feat: crear la estructura inicial de la página principal"```
+git commit -m "feat: crear la estructura inicial de la página principal"
+```
 
 ### 5. Empujar la Rama al Repositorio Remoto
 Empuja la rama al repositorio remoto:
 
 ```sh
-git push -u origin feature/pagina-principal```
+git push -u origin feature/pagina-principal
+```
 
 ### 6. Crear una Rama para una Nueva Funcionalidad
 Crea una nueva rama para una nueva funcionalidad:
 
 ```sh
-git checkout -b feature/nueva-seccion```
+git checkout -b feature/nueva-seccion
+```
 
 ### 7. Modificar el HTML para Añadir una Nueva Sección
 Añade una nueva sección al `index.html`:
@@ -92,20 +98,23 @@ Añade una nueva sección al `index.html`:
 <div>
     <h2>Nueva Sección</h2>
     <p>Contenido de la nueva sección.</p>
-</div>```
+</div>
+```
 
 ### 8. Hacer un Commit Convencional
 Realiza un commit usando el formato de Conventional Commits:
 
 ```sh
 git add index.html
-git commit -m "feat: añadir una nueva sección a la página principal"```
+git commit -m "feat: añadir una nueva sección a la página principal"
+```
 
 ### 9. Crear un Conflicto
 Vamos a crear un conflicto editando el mismo párrafo en ambas ramas. Vuelve a la rama `feature/pagina-principal` y edita el `index.html`:
 
 ```sh
-git checkout feature/pagina-principal```
+git checkout feature/pagina-principal
+```
 
 Modifica el párrafo:
 
@@ -117,20 +126,23 @@ Haz un commit:
 ```sh
 Copy code
 git add index.html
-git commit -m "fix: actualizar el contenido del párrafo en la página principal"```
+git commit -m "fix: actualizar el contenido del párrafo en la página principal"
+```
 
-Empuja los cambios:
+Haz push a los cambios:
 
 ```sh
 Copy code
-git push origin feature/pagina-principal```
+git push origin feature/pagina-principal
+```
 
 ### 10. Intentar Fusionar y Resolver el Conflicto
 Intenta fusionar la rama `feature/nueva-seccion` en `feature/pagina-principal`:
 
 ```sh
 git checkout feature/pagina-principal
-git merge feature/nueva-seccion```
+git merge feature/nueva-seccion
+```
 
 Git mostrará un conflicto. Abre el `index.html` y resuelve el conflicto editando el archivo para que luzca así:
 
@@ -139,20 +151,23 @@ Git mostrará un conflicto. Abre el `index.html` y resuelve el conflicto editand
 <div>
     <h2>Nueva Sección</h2>
     <p>Contenido de la nueva sección.</p>
-</div>```
+</div>
+```
 
 ### 11. Finalizar el Merge
 Añade y commitea los cambios resueltos:
 
 ```sh
 git add index.html
-git commit -m "merge: resolver el conflicto entre las ramas feature/pagina-principal y feature/nueva-seccion"```
+git commit -m "merge: resolver el conflicto entre las ramas feature/pagina-principal y feature/nueva-seccion"
+```
 
 ### 12. Empujar los Cambios al Repositorio Remoto
 Empuja los cambios al repositorio remoto:
 
 ```sh
-git push origin feature/pagina-principal```
+git push origin feature/pagina-principal
+```
 
 ### 13. Crear un Pull Request en GitHub
 
